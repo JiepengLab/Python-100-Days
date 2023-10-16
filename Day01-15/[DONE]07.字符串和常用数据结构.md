@@ -173,7 +173,7 @@ print(list1) # [1, 400, 3, 5, 7, 100, 200, 1000, 2000]
 print(len(list1)) # 9
 # 先通过成员运算判断元素是否在列表中，如果存在就删除该元素
 if 3 in list1:
-	list1.remove(3)
+    list1.remove(3)
 if 1234 in list1:
     list1.remove(1234)
 print(list1) # [1, 400, 5, 7, 100, 200, 1000, 2000]
@@ -249,13 +249,13 @@ for val in f:
 
 除了上面提到的生成器语法，Python中还有另外一种定义生成器的方式，就是通过`yield`关键字将一个普通函数改造成生成器函数。下面的代码演示了如何实现一个生成[斐波拉切数列](https://zh.wikipedia.org/wiki/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97)的生成器。所谓斐波拉切数列可以通过下面[递归](https://zh.wikipedia.org/wiki/%E9%80%92%E5%BD%92)的方法来进行定义：
 
-![$${\displaystyle F_{0}=0}$$](./res/formula_6.png)
+![1](./res/formula_6.png)
 
-![$${\displaystyle F_{1}=1}$$](./res/formula_7.png)
+![2](./res/formula_7.png)
 
-![$${\displaystyle F_{n}=F_{n-1}+F_{n-2}}({n}\geq{2})$$](./res/formula_8.png)
+![3](./res/formula_8.png)
 
-![](./res/fibonacci-blocks.png)
+![4](./res/fibonacci-blocks.png)
 
 ```Python
 def fib(n):
@@ -416,7 +416,7 @@ print(scores)
 
 ### 练习
 
-#### 练习1：在屏幕上显示跑马灯文字。
+#### 练习1：在屏幕上显示跑马灯文字
 
 参考答案：
 
@@ -440,7 +440,7 @@ if __name__ == '__main__':
     main()
 ```
 
-#### 练习2：设计一个函数产生指定长度的验证码，验证码由大小写字母和数字构成。
+#### 练习2：设计一个函数产生指定长度的验证码，验证码由大小写字母和数字构成
 
 参考答案：
 
@@ -465,7 +465,7 @@ def generate_code(code_len=4):
     return code
 ```
 
-#### 练习3：设计一个函数返回给定文件名的后缀名。
+#### 练习3：设计一个函数返回给定文件名的后缀名
 
 参考答案：
 
@@ -486,7 +486,7 @@ def get_suffix(filename, has_dot=False):
         return ''
 ```
 
-#### 练习4：设计一个函数返回传入的列表中最大和第二大的元素的值。
+#### 练习4：设计一个函数返回传入的列表中最大和第二大的元素的值
 
 参考答案：
 
@@ -502,7 +502,7 @@ def max2(x):
     return m1, m2
 ```
 
-#### 练习5：计算指定的年月日是这一年的第几天。
+#### 练习5：计算指定的年月日是这一年的第几天
 
 参考答案：
 
@@ -547,7 +547,7 @@ if __name__ == '__main__':
     main()
 ```
 
-#### 练习6：打印[杨辉三角](https://zh.wikipedia.org/wiki/%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92%E5%BD%A2)。
+#### 练习6：打印[杨辉三角](https://zh.wikipedia.org/wiki/%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92%E5%BD%A2)
 
 参考答案：
 
@@ -572,7 +572,7 @@ if __name__ == '__main__':
 
 ### 综合案例
 
-#### 案例1：双色球选号。
+#### 案例1：双色球选号
 
 ```Python
 from random import randrange, randint, sample
@@ -613,7 +613,7 @@ if __name__ == '__main__':
 
 > **说明：** 上面使用random模块的sample函数来实现从列表中选择不重复的n个元素。
 
-#### 综合案例2：[约瑟夫环问题](https://zh.wikipedia.org/wiki/%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98)。
+#### 综合案例2：[约瑟夫环问题](https://zh.wikipedia.org/wiki/%E7%BA%A6%E7%91%9F%E5%A4%AB%E6%96%AF%E9%97%AE%E9%A2%98)
 
 ```Python
 """
@@ -643,7 +643,7 @@ if __name__ == '__main__':
 
 ```
 
-#### 综合案例3：[井字棋](https://zh.wikipedia.org/wiki/%E4%BA%95%E5%AD%97%E6%A3%8B)游戏。
+#### 综合案例3：[井字棋](https://zh.wikipedia.org/wiki/%E4%BA%95%E5%AD%97%E6%A3%8B)游戏
 
 ```Python
 import os

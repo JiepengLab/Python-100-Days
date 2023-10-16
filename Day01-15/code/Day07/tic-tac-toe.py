@@ -41,7 +41,7 @@ def main():
                     turn = 'o'
                 else:
                     turn = 'x'
-            os.system('clear')
+            os.system('cls')
             print_board(curr_board)
         choice = input('再玩一局?(yes|no)')
         begin = choice == 'yes'
