@@ -55,7 +55,7 @@ class Ball(object):
             if distance < self.radius + other.radius \
                     and self.radius > other.radius:
                 other.alive = False
-               	self.radius = self.radius + int(other.radius * 0.146)
+                self.radius = self.radius + int(other.radius * 0.146)
 
     def draw(self, screen):
         """在窗口上绘制球"""
