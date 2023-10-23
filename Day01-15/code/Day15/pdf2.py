@@ -6,13 +6,13 @@ Author: 骆昊
 Date: 2018-03-26
 """
 
-from PyPDF2 import PdfFileReader
+from PyPDF2 import PdfReader
 
-with open('./res/Python课程大纲.pdf', 'rb') as f:
-    reader = PdfFileReader(f, strict=False)
-    print(reader.numPages)
-    if reader.isEncrypted:
+with open('./res/Docker入门教程.pdf', 'rb') as f:
+    reader = PdfReader(f, strict=False)
+    print(len(reader.pages))
+    if reader.is_encrypted:
         reader.decrypt('')
-    current_page = reader.getPage(5)
+    current_page = reader.pages[5]
     print(current_page)
-    print(current_page.extractText())
+    print(current_page.extract_text())
