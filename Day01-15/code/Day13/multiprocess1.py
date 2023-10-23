@@ -12,6 +12,7 @@ Date: 2018-03-20
 
 from multiprocessing import Process, Queue, current_process
 from time import sleep
+import random
 
 
 def sub_task(content, counts):
